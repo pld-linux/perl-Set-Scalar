@@ -1,18 +1,19 @@
-#
+
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	Scalar
 Summary:	Set::Scalar - basic set operations
 Summary(pl):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
-Version:	1.17
-Release:	3
+Version:	1.18
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bea3cfc1b59c51e68451ed1006db950d
+# Source0-md5:	09fb4aa897509e8d7b21102c1c412b52
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -32,12 +33,13 @@ Set::Scalar - podstawowe operacje na zbiorach.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
