@@ -1,7 +1,7 @@
-
+#
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	Scalar
@@ -10,7 +10,8 @@ Summary(pl):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
 Version:	1.19
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6ad1793cb4eb8839efadb12b67e35364
