@@ -5,10 +5,10 @@
 %define	pdir	Set
 %define	pnam	Scalar
 Summary:	Set::Scalar - basic set operations
-#Summary(pl):	
+Summary(pl):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
 Version:	1.17
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Set::Scalar - basic set operations.
 
-# %description -l pl
-# TODO
+%description -l pl
+Set::Scalar - podstawowe operacje na zbiorach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
