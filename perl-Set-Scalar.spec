@@ -8,12 +8,12 @@
 Summary:	Set::Scalar - basic set operations
 Summary(pl):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
-Version:	1.18
+Version:	1.19
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	09fb4aa897509e8d7b21102c1c412b52
+# Source0-md5:	6ad1793cb4eb8839efadb12b67e35364
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
