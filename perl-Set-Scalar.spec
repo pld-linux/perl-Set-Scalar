@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Scalar
 Summary:	Set::Scalar - basic set operations
-Summary(pl):	Set::Scalar - podstawowe operacje na zbiorach
+Summary(pl.UTF-8):   Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
 Version:	1.20
 Release:	1
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Set::Scalar - basic set operations.
 
-%description -l pl
+%description -l pl.UTF-8
 Set::Scalar - podstawowe operacje na zbiorach.
 
 %prep
