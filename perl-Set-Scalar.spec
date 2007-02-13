@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Scalar
 Summary:	Set::Scalar - basic set operations
-Summary(pl.UTF-8):   Set::Scalar - podstawowe operacje na zbiorach
+Summary(pl.UTF-8):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
 Version:	1.20
 Release:	1
