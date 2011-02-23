@@ -8,13 +8,13 @@
 Summary:	Set::Scalar - basic set operations
 Summary(pl.UTF-8):	Set::Scalar - podstawowe operacje na zbiorach
 Name:		perl-Set-Scalar
-Version:	1.24
+Version:	1.25
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Set/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fb7794f4051cfb3bc58b733dbaee64c2
+Source0:	http://www.cpan.org/modules/by-module/Set/JHI/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	749349bb42757f46d25593e89444872e
 URL:		http://search.cpan.org/dist/Set-Scalar/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/Set/*.pm
+%{perl_vendorlib}/Set/Scalar.pm
 %{perl_vendorlib}/Set/Scalar
-%{_mandir}/man3/*
+%{_mandir}/man3/Set::Scalar*.3pm*
